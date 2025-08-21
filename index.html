@@ -487,11 +487,11 @@
         let isConnected = false;
         
         // URL ของ Google Apps Script Web App - กรุณาแก้ไข URL นี้
-        const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxpspVZAXw41rWwBSN4c5J2N3vIDwHUmoVdLiK_F40SqiM2GiBl8ZPpbYQ-3mKVhosh/exec';
+        const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxSQpIP15ZuHthyLAcQmGgyoAwGjrwXvxZ8Pjxvs53eb9K2px66rz9UDfgPHFoZJu9o/exec';
         
         // ตรวจสอบการเชื่อมต่อเมื่อโหลดหน้า
         function checkScriptURL() {
-            const isDemoMode = SCRIPT_URL === 'https://script.google.com/macros/s/AKfycbxpspVZAXw41rWwBSN4c5J2N3vIDwHUmoVdLiK_F40SqiM2GiBl8ZPpbYQ-3mKVhosh/exec';
+            const isDemoMode = SCRIPT_URL === 'https://script.google.com/macros/s/AKfycbxSQpIP15ZuHthyLAcQmGgyoAwGjrwXvxZ8Pjxvs53eb9K2px66rz9UDfgPHFoZJu9o/exec';
             const statusElement = document.getElementById('connectionStatus');
             const demoWarning = document.getElementById('demoWarning');
             
@@ -1157,7 +1157,7 @@
         
         // ทดสอบการเชื่อมต่อ Google Apps Script
         async function testConnection() {
-            if (SCRIPT_URL === 'https://script.google.com/macros/s/AKfycbxpspVZAXw41rWwBSN4c5J2N3vIDwHUmoVdLiK_F40SqiM2GiBl8ZPpbYQ-3mKVhosh/exec') {
+            if (SCRIPT_URL === 'https://script.google.com/macros/s/AKfycbxSQpIP15ZuHthyLAcQmGgyoAwGjrwXvxZ8Pjxvs53eb9K2px66rz9UDfgPHFoZJu9o/exec') {
                 showNotification('⚠️ กรุณาแก้ไข SCRIPT_URL ในโค้ดให้เป็น URL ของ Google Apps Script ที่ deploy แล้ว', 'error');
                 return;
             }
